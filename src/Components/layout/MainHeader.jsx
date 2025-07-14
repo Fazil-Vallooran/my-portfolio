@@ -106,7 +106,7 @@ const MainHeader = () => {
       <nav
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } flex-col md:flex md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-primary md:bg-transparent p-4 md:p-0 z-40`}
+        } flex-col md:flex md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-6 absolute md:static top-full left-0 w-full md:w-auto bg-primary/95 md:bg-transparent backdrop-blur p-4 md:p-0 z-40`}
       >
         {navLinks.map((link) => (
           <a
