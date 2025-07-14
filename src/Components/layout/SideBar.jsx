@@ -42,8 +42,12 @@ const SideBar = ({ className = "" }) => {
         ))}
       </div>
       {/* Horizontal line for separation on mobile, vertical on desktop */}
-      <div className="hidden md:block w-1 h-40 bg-gray-400 mt-6" />
-      <div className="block md:hidden h-1 w-40 bg-gray-400 ml-4" />
+      {/* Line visible only on large screens (vertical bar) */}
+<div className="hidden md:block w-1 h-40 bg-gray-400 mt-6" />
+
+{/* Mobile line removed — comment out or delete this */}
+{/* <div className="block md:hidden h-1 w-40 bg-gray-400 ml-4" /> */}
+
     </div>
   );
 };

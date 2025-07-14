@@ -9,7 +9,7 @@ const Contact = () => (
       I’m actively looking for new opportunities where I can contribute, grow, and make an impact. Feel free to reach out — I’d be happy to connect and explore how I can help.
     </p>
     <a
-      href="mailto:your.email@example.com"
+      href="mailto:fazilvallooran@gmail.com"
       className="inline-block px-6 md:px-8 py-3 md:py-4 border-2 border-[#3de9da] rounded-md text-[#3de9da] font-mono text-base md:text-lg font-semibold transition-all duration-300 hover:bg-[#2bb3a6] hover:text-primary hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#3de9da]"
     >
       Say Hello
