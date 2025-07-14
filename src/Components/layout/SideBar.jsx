@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Logo from "@icons/Logo";
 // import removed
 import socialLinks from "@constants/SocialLinks";
 
