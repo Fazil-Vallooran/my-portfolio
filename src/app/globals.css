@@ -1,2 +1,25 @@
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+  background: #18181b;
+}
+::-webkit-scrollbar-thumb {
+  background: #2bb3a6;
+  border-radius: 8px;
+  border: 2px solid #18181b;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1e8e7e;
+}
+::-webkit-scrollbar-track {
+  background: #18181b;
+  border-radius: 8px;
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #2bb3a6 #18181b;
+}
 @import "tailwindcss";
 /* All theme-related styles have been removed. Add your global styles below if needed. */

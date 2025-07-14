@@ -11,7 +11,7 @@ const ClickableIcon = ({ href, Icon, label }) => (
     aria-label={label}
     className="group relative flex items-center"
   >
-    <Icon className="w-8 h-8 text-secondary hover:text-accent transition-all duration-300 dark:text-secondary-light dark:hover:text-accent" />
+    <Icon className="w-8 h-8 text-secondary hover:text-accent transition-all duration-300 dark:text-secondary-light dark:hover:text-accent group-hover:scale-125 group-hover:-translate-y-2" />
     <span className="absolute left-8 opacity-0 group-hover:opacity-100 bg-primary text-accent text-xs rounded px-2 py-1 transition-opacity duration-300 whitespace-nowrap z-10 dark:bg-primary dark:text-accent" >
       {label}
     </span>
