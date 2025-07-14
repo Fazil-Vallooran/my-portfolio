@@ -1,4 +1,5 @@
 import { Children } from "react";
+import { Analytics } from "@vercel/analytics/next"
 import MainLayout from "../Components/layout/MainLayout";
 import "./globals.css"
 
