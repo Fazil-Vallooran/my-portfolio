@@ -4,10 +4,24 @@ const DevtoIcon = ({ className }) => (
   <svg
     className={className}
     viewBox="0 0 50 50"
-    fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M7.5 10C5.567 10 4 11.567 4 13.5v23C4 38.433 5.567 40 7.5 40h35c1.933 0 3.5-1.567 3.5-3.5v-23C46 11.567 44.433 10 42.5 10h-35zm11.813 9.375v11.25c0 .69-.56 1.25-1.25 1.25h-2.25a1.25 1.25 0 0 1-1.25-1.25v-11.25c0-.69.56-1.25 1.25-1.25h2.25c.69 0 1.25.56 1.25 1.25zm6.563 0v1.875h-1.563v7.5h1.563v1.875h-4.375v-1.875h1.563v-7.5h-1.563v-1.875h4.375zm8.437 0c.69 0 1.25.56 1.25 1.25v8.75c0 .69-.56 1.25-1.25 1.25h-2.5a1.25 1.25 0 0 1-1.125-.75l-1.875-4.063v4.063c0 .69-.56 1.25-1.25 1.25h-1.25v-11.25h1.25c.69 0 1.25.56 1.25 1.25v4.063l1.875-4.063c.197-.437.64-.75 1.125-.75h2.5z" />
+    {/* Square background */}
+    <rect x="4" y="4" width="42" height="42" rx="8" fill="currentColor" />
+    {/* DEV text centered in square */}
+    <text
+      x="25"
+      y="29"
+      textAnchor="middle"
+      fontWeight="bold"
+      fontSize="20"
+      fill="#111"
+      fontFamily="Montserrat, Inter, Arial, sans-serif"
+      letterSpacing="2"
+      dominantBaseline="middle"
+    >
+      DEV
+    </text>
   </svg>
 );
 

@@ -1,18 +1,19 @@
 import GithubIcon from "@icons/GithubIcon";
-import LinkedInIcon from "@icons/LinkedinIcon";
+import LinkedinIcon from "@icons/LinkedinIcon";
 import InstagramIcon from "@icons/InstagramIcon";
 import DevtoIcon from "@icons/DevtoIcon";
 import MediumIcon from "@icons/MediumIcon";
+import SubstackIcon from "@icons/SubstackIcon";
 
-const socialLinks = [
+export const socialLinks = [
   {
-    href: "https://github.com/fazil-Vallooran",
+    href: "https://github.com/fazil-v",
     icon: GithubIcon,
     label: "GitHub"
   },
   {
     href: "https://www.linkedin.com/in/fazil-v/",
-    icon: LinkedInIcon,
+    icon: LinkedinIcon,
     label: "LinkedIn"
   },
   {
@@ -29,6 +30,11 @@ const socialLinks = [
     href: "https://medium.com/@fazil-v",
     icon: MediumIcon,
     label: "Medium"
+  },
+  {
+    href: "https://fazilv.substack.com/",
+    icon: SubstackIcon,
+    label: "Substack"
   }
 ];
 

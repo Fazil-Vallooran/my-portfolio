@@ -59,6 +59,7 @@ const MainHeader = () => {
                 if (section) {
                   e.preventDefault();
                   section.scrollIntoView({ behavior: "smooth" });
+                  window.history.replaceState(null, '', link.href);
                 }
               }
             }}
@@ -67,7 +68,7 @@ const MainHeader = () => {
           </a>
         ))}
         <a
-          href="/resume.pdf"
+          href="/Mohammed Fazil.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="ml-4 px-4 py-1 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-colors duration-200 text-sm"
