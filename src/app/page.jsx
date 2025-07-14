@@ -8,7 +8,10 @@ const HomePage = () => {
       <Intro />
       {/* About Section */}
       <section id="about" className=" bg-primary rounded-xl shadow-lg p-6 mb-80 max-w-xl w-full">
-        <h2 className="text-2xl font-semibold mb-4 text-secondary">About</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-secondary flex items-center gap-4">
+          <span className="font-mono text-xl font-bold block" style={{color: '#2bb3a6'}}>01</span>
+          <span>About</span>
+        </h2>
         <p className="text-base text-secondary">
           I’m a software tester passionate about ensuring quality and 
           reliability in every product I work on. With a keen eye for detail 
@@ -19,19 +22,28 @@ const HomePage = () => {
         </p>
       </section>
       <section id="experience" className="bg-primary rounded-xl shadow-lg p-6 mb-100 max-w-xl w-full">
-        <h2 className="text-2xl font-semibold mb-4 text-secondary">Experience</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-secondary flex items-center gap-4">
+          <span className="font-mono text-xl font-bold block" style={{color: '#2bb3a6'}}>02</span>
+          <span>Experience</span>
+        </h2>
         <p className="text-base text-secondary">
           Experience content goes here.
         </p>
       </section>
       <section id="work" className="bg-primary rounded-xl shadow-lg p-6 mb-100 mt-50 max-w-xl w-full">
-        <h2 className="text-2xl font-semibold mb-4 text-secondary">Work</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-secondary flex items-center gap-4">
+          <span className="font-mono text-xl font-bold block" style={{color: '#2bb3a6'}}>03</span>
+          <span>Work</span>
+        </h2>
         <p className="text-base text-secondary">
           Work content goes here.
         </p>
       </section>
       <section id="contact" className="bg-primary rounded-xl shadow-lg p-6 mb-100 max-w-xl w-full">
-        <h2 className="text-2xl font-semibold mb-4 text-secondary">Contact</h2>
+        <h2 className="text-2xl font-semibold mb-4 text-secondary flex items-center gap-4">
+          <span className="font-mono text-xl font-bold block" style={{color: '#2bb3a6'}}>04</span>
+          <span>Contact</span>
+        </h2>
         <p className="text-base text-secondary">
           Contact content goes here.
         </p>

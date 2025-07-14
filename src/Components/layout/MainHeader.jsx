@@ -2,10 +2,30 @@
 import React, { useEffect, useState } from "react";
 
 const navLinks = [
-  { name: "01. About Me", href: "#about", id: "about" },
-  { name: "02. Experience", href: "#experience", id: "experience" },
-  { name: "03. Work", href: "#work", id: "work" },
-  { name: "04. Contact", href: "#contact", id: "contact" },
+  {
+    number: "01",
+    label: "About Me",
+    href: "#about",
+    id: "about",
+  },
+  {
+    number: "02",
+    label: "Experience",
+    href: "#experience",
+    id: "experience",
+  },
+  {
+    number: "03",
+    label: "Work",
+    href: "#work",
+    id: "work",
+  },
+  {
+    number: "04",
+    label: "Contact",
+    href: "#contact",
+    id: "contact",
+  },
 ];
 
 const MainHeader = () => {
@@ -46,12 +66,12 @@ const MainHeader = () => {
       <nav className="flex items-center space-x-6">
         {navLinks.map((link) => (
           <a
-            key={link.name}
+            key={link.label}
             href={link.href}
-            className={`text-lg font-bold cursor-pointer transition-colors duration-200 ${
+            className={`text-lg font-bold cursor-pointer transition-colors duration-200 group flex items-center font-mono ${
               activeSection === link.id
-                ? "text-white underline underline-offset-4 decoration-accent"
-                : "text-accent hover:underline"
+                ? "text-white"
+                : "text-accent"
             }`}
             onClick={(e) => {
               if (link.href.startsWith("#")) {
@@ -64,16 +84,21 @@ const MainHeader = () => {
               }
             }}
           >
-            {link.name}
+            <span style={{ color: '#2bb3a6' }} className="font-bold mr-1">{link.number}</span>
+            <span className="transition-colors duration-200 group-hover:text-[#2bb3a6]">. {link.label}</span>
           </a>
         ))}
         <a
           href="/Mohammed Fazil.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="ml-4 px-4 py-1 border border-accent text-accent rounded hover:bg-accent hover:text-primary transition-colors duration-200 text-sm"
+          className="ml-4 px-5 py-2 border-2 border-accent text-accent rounded-lg bg-primary shadow-sm text-base font-semibold transition-all duration-300 hover:scale-110 hover:shadow-xl hover:bg-accent hover:text-primary focus:outline-none focus:ring-2 focus:ring-accent"
+          style={{ letterSpacing: '1px' }}
         >
-          Resume
+          <span className="inline-block align-middle">Resume</span>
+          <svg className="inline-block ml-2 align-middle transition-transform duration-300 group-hover:translate-x-1" width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 10H15M15 10L11 6M15 10L11 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
         </a>
       </nav>
     </div>
