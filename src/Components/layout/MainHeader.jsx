@@ -84,8 +84,8 @@ const MainHeader = () => {
               }
             }}
           >
-            <span style={{ color: '#2bb3a6' }} className="font-bold mr-1">{link.number}</span>
-            <span className="transition-colors duration-200 group-hover:text-[#2bb3a6]">. {link.label}</span>
+            <span style={{ color: '#2bb3a6' }} className="font">{link.number}.</span>
+            <span className="transition-colors duration-200 group-hover:text-[#2bb3a6]">{link.label}</span>
           </a>
         ))}
         <a
