@@ -1,14 +1,19 @@
+
 import React from "react";
 
 const Contact = () => (
-  <section id="contact" className="bg-primary rounded-xl shadow-lg p-6 mb-100 max-w-xl w-full">
-    <h2 className="text-2xl font-semibold mb-4 text-secondary flex items-center gap-4">
-      <span className="font-mono text-xl font-bold block" style={{color: '#2bb3a6'}}>04</span>
-      <span>Contact</span>
-    </h2>
-    <p className="text-base text-secondary">
-      Contact content goes here.
+  <section id="contact" className="flex flex-col items-center justify-center py-32 px-4 w-full">
+    <h2 className="text-[#3de9da] font-mono text-lg font-bold mb-4 tracking-wide">04. What's Next?</h2>
+    <h3 className="text-5xl font-extrabold text-secondary mb-6 text-center">Get In Touch</h3>
+    <p className="text-lg text-secondary max-w-2xl text-center mb-10">
+      I’m actively looking for new opportunities where I can contribute, grow, and make an impact. Feel free to reach out — I’d be happy to connect and explore how I can help.
     </p>
+    <a
+      href="mailto:your.email@example.com"
+      className="inline-block px-8 py-4 border-2 border-[#3de9da] rounded-md text-[#3de9da] font-mono text-lg font-semibold transition-all duration-300 hover:bg-[#2bb3a6] hover:text-primary hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#3de9da]"
+    >
+      Say Hello
+    </a>
   </section>
 );
 
