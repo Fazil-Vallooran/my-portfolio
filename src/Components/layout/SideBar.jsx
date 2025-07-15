@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import socialLinks from "@constants/SocialLinks";
+import { useLanding } from "@contexts/landingContext";
 
 const ClickableIcon = ({ href, Icon, label }) => (
   <a
@@ -18,6 +19,11 @@ const ClickableIcon = ({ href, Icon, label }) => (
 );
 
 const SideBar = ({ className = "" }) => {
+  const { showLanding } = useLanding();
+console.log("showLanding:", showLanding);
+
+  if (showLanding) return null; // Hide sidebar while landing shows
+
   return (
     <div
       className={`${className} static lg:fixed w-full md:w-16 md:left-12 md:top-40 md:h-screen h-16 flex flex-row md:flex-col justify-center items-center px-2 py-2 md:py-4 group/sidebar transition-all duration-300 bg-primary z-40 md:z-50 rounded-none md:rounded-tr-2xl md:rounded-br-2xl dark:bg-primary`}
