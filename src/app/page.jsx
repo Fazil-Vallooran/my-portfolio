@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import Intro from "@layout/Intro";
-import About from "@layout/About";
-import Experience from "@layout/Experience";
-import Work from "@layout/Work";
-import Contact from "@layout/Contact";
+import Intro from "@sections/Intro";
+import About from "@sections/About";
+import Experience from "@sections/Experience";
+import Work from "@sections/Work";
+import Contact from "@sections/Contact";
 
 const HomePage = () => {
   return (

@@ -4,10 +4,11 @@
     "paths": {
       "@/*": ["./src/*"],
       "@icons/*": ["Icons/*"],
-      "@components/*": ["Components/*"],
-      "@layout/*": ["Components/layout/*"],
+      "@components/*": ["components/*"],
+      "@layout/*": ["components/layout/*"],
       "@constants/*": ["constants/*"],
-      "@ui/*": ["Components/ui/*"]
+      "@ui/*": ["components/ui/*"],
+      "@sections/*": ["sections/*"]
     }
   }
 }
