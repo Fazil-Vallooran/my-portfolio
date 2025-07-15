@@ -1,6 +1,8 @@
+import SectionWrapper from "@components/SectionWrapper";
 import React from "react";
 
 const Work = () => (
+  <SectionWrapper>
   <section
   id="work"
   className="bg-primary rounded-xl shadow-lg p-6 mb-320 mt-240 max-w-4xl w-full"
@@ -14,6 +16,7 @@ const Work = () => (
       Work content goes here.
     </p>
   </section>
+  </SectionWrapper>
 );
 
 export default Work;

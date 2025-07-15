@@ -1,6 +1,8 @@
+import SectionWrapper from "@components/SectionWrapper";
 import React from "react";
 
 const Intro = () => (
+  <SectionWrapper>
   <section className="mb-100 max-w-4xl w-full text-left ml-4 mt-64">
     <p className="text-accent text-lg mb-6" style={{ color: "#3de9da" }}>
       Hi, my name is
@@ -45,6 +47,7 @@ const Intro = () => (
       </svg>
     </a>
   </section>
+  </SectionWrapper>
 );
 
 export default Intro;

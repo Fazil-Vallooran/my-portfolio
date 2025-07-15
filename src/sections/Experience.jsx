@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import SectionWrapper from "@components/SectionWrapper";
 
 const jobs = [
   {
@@ -53,6 +54,7 @@ const WorkExperience = () => {
   const [openMobileIndex, setOpenMobileIndex] = useState(null);
 
   return (
+    <SectionWrapper>
     <section
       className="w-full max-w-5xl xl:max-w-6xl mx-auto px-6 mt-24 mb-32 scroll-mt-32"
       id="work"
@@ -150,6 +152,7 @@ const WorkExperience = () => {
         })}
       </div>
     </section>
+    </SectionWrapper>
   );
 };
 

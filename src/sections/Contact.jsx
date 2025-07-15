@@ -1,6 +1,8 @@
+import SectionWrapper from "@components/SectionWrapper";
 import React from "react";
 
 const Contact = () => (
+  <SectionWrapper>
   <section id="contact" className="flex flex-col items-center justify-center py-16 md:py-32 px-2 md:px-4 w-full">
     <h2 className="text-[#3de9da] font-mono text-base md:text-lg font-bold mb-2 md:mb-4 tracking-wide">04. What's Next?</h2>
     <h3 className="text-3xl md:text-5xl font-extrabold text-secondary mb-4 md:mb-6 text-center">Get In Touch</h3>
@@ -14,6 +16,7 @@ const Contact = () => (
       Say Hello
     </a>
   </section>
+  </SectionWrapper>
 );
 
 export default Contact;
