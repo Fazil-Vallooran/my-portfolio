@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { AnimatePresence } from "framer-motion";
-import Landing from "@components/landing"; // adjust path if needed
+import Landing from "@components/landing";
 import Intro from "@sections/Intro";
 import About from "@sections/About";
 import Experience from "@sections/Experience";
@@ -26,23 +25,18 @@ const HomePage = () => {
     };
   }, []);
 
+  if (showLanding) {
+    return <Landing />;
+  }
+
   return (
-    <AnimatePresence mode="wait">
-      {showLanding ? (
-        <Landing key="landing" />
-      ) : (
-        <div
-          key="main"
-          className="min-h-screen flex flex-col justify-center items-center px-4"
-        >
-          <Intro />
-          <About />
-          <Experience />
-          <Work />
-          <Contact />
-        </div>
-      )}
-    </AnimatePresence>
+    <div className="min-h-screen flex flex-col justify-center items-center px-4">
+      <Intro />
+      <About />
+      <Experience />
+      <Work />
+      <Contact />
+    </div>
   );
 };
 

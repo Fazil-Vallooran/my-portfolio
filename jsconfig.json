@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "baseUrl": "src",
     "paths": {
       "@/*": ["./src/*"],
@@ -9,8 +14,8 @@
       "@constants/*": ["constants/*"],
       "@contexts/*": ["contexts/*"],
       "@ui/*": ["components/ui/*"],
-      "@sections/*": ["sections/*"]
-      
+      "@sections/*": ["sections/*"],
+      "@util/*": ["util/*"]
     }
   }
 }

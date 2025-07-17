@@ -1,5 +1,5 @@
 const SectionWrapper = ({ children, className = "" }) => (
-  <section className={`max-w-4xl w-full px-4 mb-24 ${className}`}>
+  <section className="min-h-screen w-full px-6 py-20 border border-red-500">   
     {children}
   </section>
 );
