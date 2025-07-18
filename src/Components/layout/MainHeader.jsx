@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Logo from "../../Icons/logo"; // Adjust the import path as necessary
+import Logo from "../../Icons/logo";
 import { useLanding } from "@contexts/landingContext";
 
 const navLinks = [
@@ -68,16 +68,15 @@ const MainHeader = () => {
   const { showLanding } = useLanding();
     console.log("showLanding:", showLanding);
   
-    if (showLanding) return null; // Hide sidebar while landing shows
+    if (showLanding) return null;
   
 
   return (
     <div className="bg-primary w-full flex items-center justify-between px-4 md:px-6 py-3 md:py-4 fixed top-2 md:top-4 z-50 shadow-md md:shadow-none">
-      <div className="relative z-50 mb-6 hidden md:block ml-8">
-        <Logo size={42} />
+      <div className="relative z-50 hidden md:block items-center" style={{ width: 60, height: 60, minWidth: 60, marginLeft: '1.75rem' }}>
+        <Logo size={60} />
       </div>
 
-      {/* Hamburger Icon */}
       <button
         className="md:hidden text-accent focus:outline-none"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -108,7 +107,6 @@ const MainHeader = () => {
         </svg>
       </button>
 
-      {/* Navigation */}
       <nav
         className={`${
           isMenuOpen ? "flex" : "hidden"
@@ -128,7 +126,7 @@ const MainHeader = () => {
                   e.preventDefault();
                   section.scrollIntoView({ behavior: "smooth" });
                   window.history.replaceState(null, "", link.href);
-                  setIsMenuOpen(false); // Close menu on mobile
+                  setIsMenuOpen(false);
                 }
               }
             }}

@@ -6,9 +6,7 @@ const DevtoIcon = ({ className }) => (
     viewBox="0 0 50 50"
     xmlns="http://www.w3.org/2000/svg"
   >
-    {/* Square background */}
     <rect x="4" y="4" width="42" height="42" rx="8" fill="currentColor" />
-    {/* DEV text centered in square */}
     <text
       x="25"
       y="29"

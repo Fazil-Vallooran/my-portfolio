@@ -111,7 +111,6 @@ const WorkExperience = () => {
         </div>
       </div>
 
-      {/* Mobile Layout */}
       <div className="md:hidden space-y-4">
         {jobs.map((job, index) => {
           const isOpen = openMobileIndex === index;

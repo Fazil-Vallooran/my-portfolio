@@ -68,7 +68,7 @@ export default function Particles({
       canvasRef.current.height = canvasSize.current.h * dpr;
       canvasRef.current.style.width = `${canvasSize.current.w}px`;
       canvasRef.current.style.height = `${canvasSize.current.h}px`;
-      context.current.setTransform(1, 0, 0, 1, 0, 0); // Reset transform before scaling
+      context.current.setTransform(1, 0, 0, 1, 0, 0);
       context.current.scale(dpr, dpr);
     }
   };
