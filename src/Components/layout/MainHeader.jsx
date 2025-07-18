@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Logo from "../../Icons/logo"; // Adjust the import path as necessary
+import { useLanding } from "@contexts/landingContext";
 
 const navLinks = [
   {
@@ -64,6 +65,11 @@ const MainHeader = () => {
       });
     };
   }, []);
+  const { showLanding } = useLanding();
+    console.log("showLanding:", showLanding);
+  
+    if (showLanding) return null; // Hide sidebar while landing shows
+  
 
   return (
     <div className="bg-primary w-full flex items-center justify-between px-4 md:px-6 py-3 md:py-4 fixed top-2 md:top-4 z-50 shadow-md md:shadow-none">

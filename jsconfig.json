@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "baseUrl": "src",
     "paths": {
       "@/*": ["./src/*"],
@@ -7,7 +12,11 @@
       "@components/*": ["Components/*"],
       "@layout/*": ["Components/layout/*"],
       "@constants/*": ["constants/*"],
-      "@ui/*": ["Components/ui/*"]
+      "@contexts/*": ["contexts/*"],
+      "@ui/*": ["Components/ui/*"],
+      "@sections/*": ["sections/*"],
+      "@util/*": ["util/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }
