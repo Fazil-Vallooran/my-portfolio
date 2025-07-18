@@ -57,7 +57,7 @@ const WorkExperience = () => {
     <SectionWrapper>
     <section
       className="w-full max-w-5xl xl:max-w-6xl mx-auto px-6 mt-24 mb-32 scroll-mt-32"
-      id="work"
+      id="experience"
     >
       <h2 className="text-2xl font-semibold mb-8 text-secondary">
         <span className="text-[#3de9da] font-mono">02.</span> Positions I’ve

@@ -68,6 +68,7 @@ export default function Particles({
       canvasRef.current.height = canvasSize.current.h * dpr;
       canvasRef.current.style.width = `${canvasSize.current.w}px`;
       canvasRef.current.style.height = `${canvasSize.current.h}px`;
+      context.current.setTransform(1, 0, 0, 1, 0, 0); // Reset transform before scaling
       context.current.scale(dpr, dpr);
     }
   };
@@ -97,7 +98,7 @@ export default function Particles({
     };
   };
 
-  const drawCircle = (circle, update = false) => {
+  const drawCircle = (circle) => {
     if (context.current) {
       const { x, y, translateX, translateY, size, alpha } = circle;
       context.current.translate(translateX, translateY);
@@ -106,10 +107,6 @@ export default function Particles({
       context.current.fillStyle = `rgba(255, 255, 255, ${alpha})`;
       context.current.fill();
       context.current.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-      if (!update) {
-        circles.current.push(circle);
-      }
     }
   };
 
@@ -126,9 +123,11 @@ export default function Particles({
 
   const drawParticles = () => {
     clearContext();
+    circles.current.length = 0;
     const particleCount = quantity;
     for (let i = 0; i < particleCount; i++) {
       const circle = circleParams();
+      circles.current.push(circle);
       drawCircle(circle);
     }
   };
@@ -176,6 +175,7 @@ export default function Particles({
       ) {
         circles.current.splice(i, 1);
         const newCircle = circleParams();
+        circles.current.push(newCircle);
         drawCircle(newCircle);
       } else {
         drawCircle(
@@ -195,8 +195,16 @@ export default function Particles({
   };
 
   return (
-    <div className={className} ref={canvasContainerRef} aria-hidden="true">
-      <canvas ref={canvasRef} />
+    <div
+      className={className}
+      ref={canvasContainerRef}
+      aria-hidden="true"
+      style={{ position: "absolute", inset: 0, width: "100vw", height: "100vh", pointerEvents: "none", zIndex: 0 }}
+    >
+      <canvas
+        ref={canvasRef}
+        style={{ display: "block", width: "100%", height: "100%" }}
+      />
     </div>
   );
 }

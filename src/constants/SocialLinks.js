@@ -17,7 +17,7 @@ export const socialLinks = [
     label: "LinkedIn"
   },
   {
-    href: "https://www.instagram.com/_fazilv?",
+    href: "https://www.instagram.com/_fazil.v_/",
     icon: InstagramIcon,
     label: "Instagram"
   },

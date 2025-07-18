@@ -1,5 +1,7 @@
 
+
 import MainLayout from "../components/layout/MainLayout";
+import Particles from "../components/particles";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -9,6 +11,7 @@ export const metadata = {
   title: "Mohammed Fazil",
   description: "Portfolio of Mohammed Fazil",
 };
+
 
 const RootLayout = ({ children }) => (
   <html lang="en" className="h-full">
@@ -20,6 +23,7 @@ const RootLayout = ({ children }) => (
       <link rel="manifest" href="/site.webmanifest" />
     </head>
     <body className={`${inter.className} h-full min-h-screen bg-gradient-to-b from-[#0a1833] to-[#142042] text-[#bfcbe6]`}>
+      <Particles quantity={80} />
       <MainLayout>{children}</MainLayout>
     </body>
   </html>

@@ -13,7 +13,7 @@ const SectionWrapper = ({
     transition={{ duration: 0.6, ease: "easeOut" }}
     className={`
       w-full px-6 py-20
-      ${fullHeight ? "min-h-screen" : "min-h-fit"}
+      ${fullHeight ? "min-h-screen flex flex-col items-center justify-center" : "min-h-fit"}
       ${className}
     `}
   >
