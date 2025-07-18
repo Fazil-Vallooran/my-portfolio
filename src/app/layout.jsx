@@ -1,7 +1,7 @@
 
 
-import MainLayout from "../components/layout/MainLayout";
-import Particles from "../components/particles";
+import MainLayout from "../Components/layout/MainLayout";
+import Particles from "../Components/particles";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
