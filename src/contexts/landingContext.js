@@ -6,9 +6,10 @@ const LandingContext = createContext(null);
 export const useLanding = () => useContext(LandingContext);
 
 export const LandingProvider = ({ children }) => {
-  const [showLanding, setShowLanding] = useState(true);
+  const [showLanding, setShowLanding] = useState(false);
 
   useEffect(() => {
+    setShowLanding(true);
     const timer = setTimeout(() => {
       setShowLanding(false);
     }, 3000);
