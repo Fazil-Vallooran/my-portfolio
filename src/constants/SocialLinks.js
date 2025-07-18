@@ -7,7 +7,7 @@ import SubstackIcon from "@icons/SubstackIcon";
 
 export const socialLinks = [
   {
-    href: "https://github.com/fazil-v",
+    href: "https://github.com/Fazil-Vallooran",
     icon: GithubIcon,
     label: "GitHub"
   },

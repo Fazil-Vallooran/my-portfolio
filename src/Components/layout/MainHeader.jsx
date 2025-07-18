@@ -73,7 +73,7 @@ const MainHeader = () => {
 
   return (
     <div className="bg-primary w-full flex items-center justify-between px-4 md:px-6 py-3 md:py-4 fixed top-2 md:top-4 z-50 shadow-md md:shadow-none">
-      <div className="relative z-50 hidden md:block flex items-center" style={{ width: 60, height: 60, minWidth: 60, marginLeft: '1.75rem' }}>
+      <div className="relative z-50 hidden md:block items-center" style={{ width: 60, height: 60, minWidth: 60, marginLeft: '1.75rem' }}>
         <Logo size={60} />
       </div>
 
