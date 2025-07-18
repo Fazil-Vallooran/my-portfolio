@@ -9,11 +9,11 @@
     "paths": {
       "@/*": ["./src/*"],
       "@icons/*": ["Icons/*"],
-      "@components/*": ["components/*"],
-      "@layout/*": ["components/layout/*"],
+      "@components/*": ["Components/*"],
+      "@layout/*": ["Components/layout/*"],
       "@constants/*": ["constants/*"],
       "@contexts/*": ["contexts/*"],
-      "@ui/*": ["components/ui/*"],
+      "@ui/*": ["Components/ui/*"],
       "@sections/*": ["sections/*"],
       "@util/*": ["util/*"]
     }
