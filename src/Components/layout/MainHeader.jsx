@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Logo from "../../Icons/logo"; // Adjust the import path as necessary
+import Logo from "../../Icons/logo";
 import { useLanding } from "@contexts/landingContext";
 
 const navLinks = [
@@ -68,7 +68,7 @@ const MainHeader = () => {
   const { showLanding } = useLanding();
     console.log("showLanding:", showLanding);
   
-    if (showLanding) return null; // Hide sidebar while landing shows
+    if (showLanding) return null;
   
 
   return (
@@ -77,7 +77,6 @@ const MainHeader = () => {
         <Logo size={42} />
       </div>
 
-      {/* Hamburger Icon */}
       <button
         className="md:hidden text-accent focus:outline-none"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -108,7 +107,6 @@ const MainHeader = () => {
         </svg>
       </button>
 
-      {/* Navigation */}
       <nav
         className={`${
           isMenuOpen ? "flex" : "hidden"
@@ -128,7 +126,7 @@ const MainHeader = () => {
                   e.preventDefault();
                   section.scrollIntoView({ behavior: "smooth" });
                   window.history.replaceState(null, "", link.href);
-                  setIsMenuOpen(false); // Close menu on mobile
+                  setIsMenuOpen(false);
                 }
               }
             }}

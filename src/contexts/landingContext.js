@@ -19,7 +19,6 @@ export const LandingProvider = ({ children }) => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Only render children after mount to avoid SSR mismatch
   if (!mounted) return null;
 
   return (
