@@ -6,7 +6,7 @@ export default function Footer({ link, className }) {
   const { showLanding } = useLanding();
   console.log("showLanding:", showLanding);
 
-  if (showLanding) return null; // Hide sidebar while landing shows
+  if (showLanding) return null; 
 
   return (
     <footer

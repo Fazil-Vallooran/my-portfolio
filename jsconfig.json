@@ -17,5 +17,6 @@
       "@sections/*": ["sections/*"],
       "@util/*": ["util/*"]
     }
-  }
+  },
+  "exclude": ["node_modules"]
 }

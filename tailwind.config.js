@@ -10,32 +10,21 @@ module.exports = {
     "./src/contexts/**/*.{js,ts,jsx,tsx}",
     "./src/utils/**/*.{js,ts,jsx,tsx}",
   ],
-  safelist: [
-    'animate-title',
-    'animate-fade-left',
-    'animate-fade-right',
-    'animate-fade-in',
-    'animate-glow',
-  ],
   theme: {
     extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            "code::before": { content: '""' },
-            "code::after": { content: '""' },
-          },
-        },
-        quoteless: {
-          css: {
-            "blockquote p:first-of-type::before": { content: "none" },
-            "blockquote p:first-of-type::after": { content: "none" },
-          },
-        },
+      colors: {
+        primary: '#0a192f', // dark blue background (dark)
+        accent: '#00e6a8',  // brighter teal accent
+        secondary: '#bfcbe6', // lighter blue/gray text for dark
+        // Light theme colors
+        'primary-light': '#f4f8fb', // very light blue background
+        'secondary-light': '#1a202c', // dark gray text for light
+        'accent-light': '#00796b', // deep teal accent for light
+      },
+      spacing: {
+        100: "25rem",
       },
       fontFamily: {
-        inter: ["Inter", ...defaultTheme.fontFamily.sans],
-        calsans: ["Calsans", ...defaultTheme.fontFamily.sans],
         sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
         display: ["var(--font-calsans)"],
       },
@@ -48,7 +37,7 @@ module.exports = {
         title: "title 3s ease-out forwards",
         "fade-left": "fade-left 3s ease-in-out forwards",
         "fade-right": "fade-right 3s ease-in-out forwards",
-        glow: "glow 2s ease-in-out infinite", // <-- ADD THIS
+        glow: "glow 2s ease-in-out infinite",
       },
       keyframes: {
         glow: {
@@ -65,12 +54,9 @@ module.exports = {
             transform: "translateX(100%)",
             opacity: "0",
           },
-          "30%": {
+          "100%": {
             transform: "translateX(0)",
             opacity: "1",
-          },
-          "100%": {
-            opacity: "0",
           },
         },
         "fade-right": {
@@ -78,12 +64,9 @@ module.exports = {
             transform: "translateX(-100%)",
             opacity: "0",
           },
-          "30%": {
+          "100%": {
             transform: "translateX(0)",
             opacity: "1",
-          },
-          "100%": {
-            opacity: "0",
           },
         },
         title: {
@@ -102,6 +85,20 @@ module.exports = {
           "100%": {
             "line-height": "1.2",
             opacity: "1",
+          },
+        },
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            "code::before": { content: '""' },
+            "code::after": { content: '""' },
+          },
+        },
+        quoteless: {
+          css: {
+            "blockquote p:first-of-type::before": { content: "none" },
+            "blockquote p:first-of-type::after": { content: "none" },
           },
         },
       },
