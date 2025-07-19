@@ -59,13 +59,7 @@ my-portfolio/
    ```bash
    npm run build
    ```
-
-## 🙋‍♂️ About Me
-
-Hi, I’m Fazil Vallooran!  
-A passionate developer focused on building impactful and user-friendly applications.  
-[Add more about your background, interests, or career goals here.]
-
+   
 ## 📫 Contact
 
 - [LinkedIn](https://www.linkedin.com/in/fazil-v/)
