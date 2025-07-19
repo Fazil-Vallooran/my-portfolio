@@ -68,7 +68,7 @@ A passionate developer focused on building impactful and user-friendly applicati
 
 ## 📫 Contact
 
-- [LinkedIn](#)
+- [LinkedIn](https://www.linkedin.com/in/fazil-v/)
 - [Email](mailto:fazilvallooran@gmail.com)
 - [Portfolio Website](https://mfazil.com)
 
