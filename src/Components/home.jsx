@@ -25,15 +25,25 @@ const HomePage = () => {
     };
   }, []);
 
+  const [fadeIn, setFadeIn] = useState(false);
+
+  useEffect(() => {
+    if (!showLanding) {
+      setTimeout(() => setFadeIn(true), 50);
+    } else {
+      setFadeIn(false);
+    }
+  }, [showLanding]);
+
   if (showLanding) return <Landing />;
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center px-4">
-      <Intro />
-      <About />
-      <Experience />
-      <Work />
-      <Contact />
+      <div className={`fade-in${fadeIn ? ' show' : ''}`}><Intro /></div>
+      <div className={`fade-in${fadeIn ? ' show' : ''}`}><About /></div>
+      <div className={`fade-in${fadeIn ? ' show' : ''}`}><Experience /></div>
+      <div className={`fade-in${fadeIn ? ' show' : ''}`}><Work /></div>
+      <div className={`fade-in${fadeIn ? ' show' : ''}`}><Contact /></div>
     </div>
   );
 };
