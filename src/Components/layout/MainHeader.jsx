@@ -143,7 +143,6 @@ const MainHeader = () => {
           </a>
         ))}
 
-        {/* Resume Button */}
         <a
           href="/Mohammed Fazil.pdf"
           target="_blank"
