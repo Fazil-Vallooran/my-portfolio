@@ -5,18 +5,21 @@
         "name": "next"
       }
     ],
-    "baseUrl": "src",
+    "baseUrl": ".",
+    "jsx": "preserve",
     "paths": {
       "@/*": ["./src/*"],
-      "@icons/*": ["Icons/*"],
-      "@components/*": ["Components/*"],
-      "@layout/*": ["Components/layout/*"],
-      "@constants/*": ["constants/*"],
-      "@contexts/*": ["contexts/*"],
-      "@ui/*": ["Components/ui/*"],
-      "@sections/*": ["sections/*"],
-      "@util/*": ["util/*"]
+      "@icons/*": ["./src/Icons/*"],
+      "@components/*": ["./src/Components/*"],
+      "@layout/*": ["./src/Components/layout/*"],
+      "@constants/*": ["./src/constants/*"],
+      "@contexts/*": ["./src/contexts/*"],
+      "@ui/*": ["./src/Components/ui/*"],
+      "@sections/*": ["./src/sections/*"],
+      "@utils/*": ["./src/utils/*"],
+      "utils/*": ["./src/utils/*"]
     }
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"]
 }

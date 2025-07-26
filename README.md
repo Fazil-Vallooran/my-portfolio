@@ -14,10 +14,11 @@ Design inspired by [brittany chiang](https://v4.brittanychiang.com) as well as [
 
 ## 🛠️ Technologies Used
 
-- HTML5, CSS3, JavaScript
-- React.js (if applicable)
-- Node.js (if applicable)
-- [Add or remove technologies as per your stack]
+- **Frontend**: Next.js 15, React 18, TypeScript
+- **Styling**: Tailwind CSS, Framer Motion
+- **Performance**: Vercel Analytics, Image Optimization
+- **Development**: ESLint, PostCSS
+- **Deployment**: Vercel
 
 ## 📁 Project Structure
 
@@ -52,7 +53,7 @@ my-portfolio/
 
 3. **Start the development server**
    ```bash
-   npm start
+   npm run dev
    ```
 
 4. **Build for production**

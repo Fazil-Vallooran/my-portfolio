@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect, useState } from "react";
-import { useMousePosition } from "utils/mouse";
+import { useMousePosition } from "@utils/mouse";
 
 export default function Particles({
   className = "",

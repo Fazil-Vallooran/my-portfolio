@@ -4,7 +4,6 @@ import { useLanding } from "@contexts/landingContext";
 
 export default function Footer({ link, className }) {
   const { showLanding } = useLanding();
-  console.log("showLanding:", showLanding);
 
   if (showLanding) return null; 
 

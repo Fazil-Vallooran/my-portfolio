@@ -1,4 +1,4 @@
-import MainLayout from "../components/layout/MainLayout";
+import MainLayout from "../Components/layout/MainLayout";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
