@@ -1,5 +1,6 @@
 
 import React from "react";
+import Image from "next/image";
 
 const technologies = [
   "Playwright",
@@ -37,7 +38,16 @@ const About = () => (
       </div>
       <div className="w-full md:flex-1 flex justify-center items-center mt-6 md:mt-0 relative z-50">
         <div className="group rounded-lg overflow-hidden border-2 border-[#2bb3a6] bg-[#2bb3a6]/10 shadow-lg w-40 h-40 md:w-64 md:h-64 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-[#3de9da] z-10">
-          <img src="/Fazil.jpeg" alt="Profile" className="object-cover w-full h-full transition-all duration-300 group-hover:brightness-110 group-hover:scale-105" />
+          <Image 
+            src="/Fazil.jpeg" 
+            alt="Mohammed Fazil - Software Quality Analyst" 
+            width={256}
+            height={256}
+            className="object-cover w-full h-full transition-all duration-300 group-hover:brightness-110 group-hover:scale-105"
+            priority
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+          />
         </div>
       </div>
     </section>

@@ -20,7 +20,6 @@ const ClickableIcon = ({ href, Icon, label }) => (
 
 const SideBar = ({ className = "" }) => {
   const { showLanding } = useLanding();
-console.log("showLanding:", showLanding);
 
   if (showLanding) return null;
 

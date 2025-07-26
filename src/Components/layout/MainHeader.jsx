@@ -66,7 +66,6 @@ const MainHeader = () => {
     };
   }, []);
   const { showLanding } = useLanding();
-    console.log("showLanding:", showLanding);
   
     if (showLanding) return null;
   
