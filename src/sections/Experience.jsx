@@ -8,21 +8,24 @@ const jobs = [
     position: "Software Quality Analyst",
     company: "Infosys Ltd",
     title: "Software Quality Analyst",
-    duration: "July 2024 – Present",
+    duration: "April 2025 – Present",
     points: [
       "Designed and implemented a new test automation framework using Playwright with C#, converting over 95% of manual test scenarios into automated tests.",
       "Integrated automation jobs into TeamCity and maintained detailed logs in Report Portal for traceability and reporting.",
       "Developed a robust regression testing framework, reducing regression time from 5 days to 1.5 days and accelerating release cycles.",
+      "Designed and executed automated API test suites using JavaScript in Postman, ensuring robust end-to-end API functionality and system reliability through comprehensive testing.",
     ],
   },
   {
     position: "Software Quality Engineer",
     company: "Infosys Ltd",
     title: "Software Quality Engineer",
-    duration: "July 2024 – Present",
+    duration: "July 2024 – March 2025",
     points: [
-      "Designed and implemented a new test automation framework using Playwright with C#, converting over 95% of manual test scenarios into automated tests.",
-    ],
+      "Streamlined back office operations by testing and validating the migration of comprehensive processes encompassing document management, invoice processing, and payment systems to ensure operational efficiency.",
+      "Tested automated order creation workflows utilizing EDI integration, verifying functionality across multiple order types and ensuring error-free processing.",
+      "Collaborated with cross-functional agile teams to support rapid delivery cycles, consistently validating product releases within two-week sprint intervals.",
+      ],
   },
   {
     position: "Test Engineer",

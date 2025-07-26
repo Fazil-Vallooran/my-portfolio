@@ -1,29 +1,39 @@
 import React from "react";
+import Image from "next/image";
 import SectionWrapper from "@components/SectionWrapper";
 
 const projects = [
   {
-    title: "Test Automation Framework",
-    description: "Designed and implemented a comprehensive test automation framework using Playwright with C#, converting over 95% of manual test scenarios into automated tests.",
-    technologies: ["Playwright", "C#", "TeamCity", "Report Portal"],
-    github: "#", // Add your actual links
-    demo: "#",
+    title: "Test Automation Framework using Playwright",
+    description: "Designed and implemented a comprehensive test automation framework using Playwright with C#, integrating with Report portal to view and see the logs.",
+    technologies: ["Playwright", "C#","Report Portal"],
+    github: "https://github.com/Fazil-Vallooran/PlaywrightTestFramework",
+    image: "https://opengraph.githubassets.com/1/Fazil-Vallooran/PlaywrightTestFramework",
     featured: true
   },
   {
-    title: "Regression Testing Suite", 
-    description: "Developed a robust regression testing framework that reduced regression time from 5 days to 1.5 days, accelerating release cycles significantly.",
-    technologies: ["Selenium", "Jenkins", "Java", "TestNG"],
-    github: "#",
-    demo: "#", 
+    title: "Test Automation Framework using Selenium", 
+    description: "Developed a robust regression testing framework using Selenium with Java and TestNG, and integrated it with Report Portal for detailed logging and reporting.",
+    technologies: ["Selenium", "Java", "TestNG", "Report Portal"],
+    github: "https://github.com/Fazil-Vallooran/seleniumframework",
+    image: "https://opengraph.githubassets.com/1/Fazil-Vallooran/seleniumframework",
     featured: true
   },
   {
-    title: "QA Process Implementation",
-    description: "Implemented QA processes across Scrum teams, including test quality metrics that reduced production defects and improved development workflows.",
-    technologies: ["Agile", "Scrum", "Test Metrics", "Quality Assurance"],
-    github: "#",
-    demo: "#",
+    title: "Tic Tac Toe Game",
+    description: "Developed a Tic Tac Toe game using JavaScript, HTML, and CSS, implementing AI algorithms for single-player mode.",
+    technologies: ["JavaScript", "HTML", "CSS"],
+    github: "https://github.com/Fazil-Vallooran/tic-tac-toe",
+    image: "https://opengraph.githubassets.com/1/Fazil-Vallooran/tic-tac-toe",
+    featured: false
+  },
+  {
+    title: "Personal Portfolio",
+    description: "A personal portfolio showcasing my projects and skills, built with Next.js and Tailwind CSS.",
+    technologies: ["Next.js", "Tailwind CSS", "React"],
+    github: "https://github.com/Fazil-Vallooran/my-portfolio",
+    demo: "https://mfazil.com",
+    image: "https://opengraph.githubassets.com/1/Fazil-Vallooran/my-portfolio",
     featured: false
   }
 ];
@@ -63,21 +73,38 @@ const Work = () => (
                       <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.263.82-.583 0-.287-.012-1.243-.018-2.25-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.755-1.333-1.755-1.09-.745.083-.73.083-.73 1.205.084 1.84 1.24 1.84 1.24 1.07 1.832 2.807 1.303 3.493.996.108-.775.418-1.303.762-1.603-2.665-.303-5.466-1.333-5.466-5.933 0-1.31.467-2.382 1.235-3.222-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 0 1 3-.405c1.02.005 2.045.137 3 .405 2.29-1.553 3.296-1.23 3.296-1.23.654 1.653.243 2.873.12 3.176.77.84 1.233 1.912 1.233 3.222 0 4.61-2.803 5.628-5.475 5.922.43.372.823 1.102.823 2.222 0 1.605-.015 2.898-.015 3.293 0 .324.216.702.825.582C20.565 22.296 24 17.796 24 12.5c0-6.63-5.373-12-12-12z"/>
                     </svg>
                   </a>
-                  <a 
-                    href={project.demo}
-                    className="text-secondary hover:text-[#3de9da] transition-colors"
-                    aria-label="View live demo"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </a>
+                  {project.demo && (
+                    <a 
+                      href={project.demo}
+                      className="text-secondary hover:text-[#3de9da] transition-colors"
+                      aria-label="View live demo"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
             <div className="lg:w-2/5">
-              <div className="bg-[#2bb3a6]/10 rounded-lg h-64 border-2 border-[#2bb3a6]/30 flex items-center justify-center">
-                <span className="text-[#3de9da] font-mono">Project Screenshot</span>
+              <div className="bg-[#2bb3a6]/10 rounded-lg overflow-hidden border-2 border-[#2bb3a6]/30 hover:border-[#3de9da] transition-all duration-300 group">
+                {project.image ? (
+                  <div className="relative h-64 w-full bg-white/5 flex items-center justify-center">
+                    <Image
+                      src={project.image}
+                      alt={`${project.title} screenshot`}
+                      width={400}
+                      height={200}
+                      className="object-contain max-h-full max-w-full transition-all duration-300 group-hover:scale-105 rounded"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+                ) : (
+                  <div className="h-64 flex items-center justify-center">
+                    <span className="text-[#3de9da] font-mono">Project Screenshot</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>
